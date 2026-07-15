@@ -73,16 +73,16 @@ public final class WeaponRegistrar {
 
         WeaponList.write(
                 registerWeaponID(700), // Int: ID
-                576, // Icon
-                Color.WHITE,
-                "Railgun of Tier 0 variety",
-                "Electromagnetic accelerator weapon.",
-                0,
-                TypeTag.COMMON,
-                0,
-                0.75F,
-                3.5F,
-                -1.0F
+                576, // Int: Icon, sets Icon according to sprite sheet.
+                Color.WHITE, // Color
+                "Railgun of Tier 0 variety", // String: Name
+                "Electromagnetic accelerator weapon.", // String: Description
+                0, // Int: Tier
+                TypeTag.COMMON, // TypeTag, rarity.
+                0, // Int: effectType (graphics)
+                0.75F, // Float: Accuracy as a percentage
+                3.5F, // Float: Reload time, don't know math behind this yet.
+                -1.0F // Float: Bonus Coef, unknown
         );
 
         // Plasma Cannons (copied from WeaponList)
