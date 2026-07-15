@@ -1,9 +1,9 @@
 package offlcersam.weapontest.mixin;
 
-import offlcersam.weapontest.CustomIconStitcher;
 import offlcersam.weapontest.MarketRegistrar;
 import offlcersam.weapontest.WeaponRegistrar;
 import game.Main;
+import offlcersam.weapontest.WeaponTestIcons;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
@@ -21,7 +21,7 @@ public class MainSetupMixin {
             )
     )
     private void weapontest$registerWeapons(CallbackInfo ci) {
-        CustomIconStitcher.extendItemIcons();
+        WeaponTestIcons.load();
         WeaponRegistrar.registerWeapons();
     }
 

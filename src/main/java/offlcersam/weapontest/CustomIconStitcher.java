@@ -11,6 +11,8 @@ import java.io.ByteArrayOutputStream;
 import java.awt.Graphics2D;
 import java.io.InputStream;
 
+// This class is now unused, it used to just stitch the new spritesheet but this would cause incompat due to mod's sprite sheets overriding eachother and stuff
+@Deprecated
 public final class CustomIconStitcher {
 
     public static final int CUSTOM_ICON_BASE = 1024; // first free index past vanilla's 0-1023

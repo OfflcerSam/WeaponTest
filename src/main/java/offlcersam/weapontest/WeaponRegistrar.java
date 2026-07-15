@@ -73,7 +73,7 @@ public final class WeaponRegistrar {
 
         WeaponList.write(
                 registerWeaponID(700), // Int: ID
-                CustomIconStitcher.CUSTOM_ICON_BASE + 0, // Int: Icon, sets Icon according to sprite sheet.
+                WeaponTestIcons.CUSTOM_ICON_BASE + 0, // Int: Icon, sets Icon according to sprite sheet. If using custom do magic, if using vanilla use integer and see WeaponList.
                 Color.WHITE, // Color
                 "Railgun of Tier 0 variety", // String: Name
                 "Electromagnetic accelerator weapon.", // String: Description
@@ -89,7 +89,7 @@ public final class WeaponRegistrar {
         WeaponListAccessorMixin.invokeSetBaseAttributes(4, 5.0F, 1L, 5.5F, 220, 2.5F);
         WeaponList.write(
                 registerWeaponID(701),
-                CustomIconStitcher.CUSTOM_ICON_BASE + 1,
+                WeaponTestIcons.CUSTOM_ICON_BASE + 1,
                 Color.WHITE,
                 "Plasma Cannon of Tier 0 variety",
                 "A functional plasma weapon.",
@@ -107,7 +107,7 @@ public final class WeaponRegistrar {
         WeaponListAccessorMixin.invokeSetBaseAttributes(2, 2.5F, 0L, 5.0F, 325, 3.5F);
         WeaponList.write(
                 registerWeaponID(702),
-                544,
+                WeaponTestIcons.CUSTOM_ICON_BASE + 0,
                 Color.WHITE,
                 "Laser of the Tier 0 variety",
                 "A functional laser weapon.",
@@ -124,7 +124,7 @@ public final class WeaponRegistrar {
         WeaponListAccessorMixin.invokeSetBaseAttributes(8, 2.5F, 0L, 1.0F, 225, 3.5F);
         WeaponList.write(
                 registerWeaponID(703),
-                640,
+                WeaponTestIcons.CUSTOM_ICON_BASE + 0,
                 Color.WHITE,
                 "Mining B of Tier 0 variety",
                 "A functional mining beam.",
