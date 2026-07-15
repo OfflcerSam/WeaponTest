@@ -73,7 +73,7 @@ public final class WeaponRegistrar {
 
         WeaponList.write(
                 registerWeaponID(700), // Int: ID
-                576, // Int: Icon, sets Icon according to sprite sheet.
+                CustomIconStitcher.CUSTOM_ICON_BASE + 0, // Int: Icon, sets Icon according to sprite sheet.
                 Color.WHITE, // Color
                 "Railgun of Tier 0 variety", // String: Name
                 "Electromagnetic accelerator weapon.", // String: Description
@@ -89,7 +89,7 @@ public final class WeaponRegistrar {
         WeaponListAccessorMixin.invokeSetBaseAttributes(4, 5.0F, 1L, 5.5F, 220, 2.5F);
         WeaponList.write(
                 registerWeaponID(701),
-                512,
+                CustomIconStitcher.CUSTOM_ICON_BASE + 1,
                 Color.WHITE,
                 "Plasma Cannon of Tier 0 variety",
                 "A functional plasma weapon.",

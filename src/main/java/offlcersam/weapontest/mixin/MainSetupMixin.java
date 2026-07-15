@@ -1,5 +1,6 @@
 package offlcersam.weapontest.mixin;
 
+import offlcersam.weapontest.CustomIconStitcher;
 import offlcersam.weapontest.MarketRegistrar;
 import offlcersam.weapontest.WeaponRegistrar;
 import game.Main;
@@ -19,7 +20,8 @@ public class MainSetupMixin {
                     shift = At.Shift.AFTER
             )
     )
-    private void weapontest$registerShips(CallbackInfo ci) {
+    private void weapontest$registerWeapons(CallbackInfo ci) {
+        CustomIconStitcher.extendItemIcons();
         WeaponRegistrar.registerWeapons();
     }
 
@@ -34,4 +36,5 @@ public class MainSetupMixin {
     private void weapontest$registerMarkets(CallbackInfo ci) {
         MarketRegistrar.registerMarkets();
     }
+
 }
