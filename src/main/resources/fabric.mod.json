@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "id": "offlcersam_weapontest",
+  "version": "1.0.0",
+  "name": "WeaponTest",
+  "description": "Sector Space Weapon mod.",
+  "environment": "*",
+
+  "mixins": [
+    "weapontest.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "java": ">=25"
+  }
+}
