@@ -59,30 +59,30 @@ public final class WeaponRegistrar {
          */
 
         // SetBaseAttributes should be before each group of weapons you want to be set to that attribute.
-        // All weaponIDs are set above whatever the latest was in WeaponList.
+        // For this example weaponIDs are set a bit above whatever the highest ID was in WeaponList.
 
         // Railgun (copied from WeaponList)
         WeaponListAccessorMixin.invokeSetBaseAttributes(
-                5, // Int: weaponType
-                3.0f, // Float: Cargo Volume
-                0L, // Long: Credit value, unsure what this does.
-                7.5f, // Float: Damage
-                350, // Int: Range
-                2.0f // Float: Energy usage ratio?
+                5,   // Int: weaponType
+                3.0f,           // Float: Cargo Volume
+                0L,             // Long: Credit value, unsure what this does.
+                7.5f,           // Float: Damage
+                350,            // Int: Range
+                2.0f            // Float: Energy usage ratio?
         );
 
         WeaponList.write(
-                registerWeaponID(700), // Int: ID
-                WeaponTestIcons.CUSTOM_ICON_BASE + 0, // Int: Icon, sets Icon according to sprite sheet. If using custom do magic, if using vanilla use integer and see WeaponList.
-                Color.WHITE, // Color
-                "Railgun of Tier 0 variety", // String: Name
-                "Electromagnetic accelerator weapon.", // String: Description
-                0, // Int: Tier
-                TypeTag.COMMON, // TypeTag, rarity.
-                0, // Int: effectType (graphics)
-                0.75F, // Float: Accuracy as a percentage
-                3.5F, // Float: Reload time, don't know math behind this yet.
-                -1.0F // Float: Bonus Coef, unknown
+                registerWeaponID(700),                  // Int: ID
+                WeaponTestIcons.CUSTOM_ICON_BASE + 0,   // Int: Icon, sets Icon according to sprite sheet. If using custom do magic, if using vanilla use integer and see WeaponList.
+                Color.WHITE,                            // Color: Unsure of what this sets at the moment.
+                "Railgun of Tier 0 variety",            // String: Name
+                "Electromagnetic accelerator weapon.",  // String: Description
+                0,                                      // Int: Tier, affects level usage.
+                TypeTag.COMMON,                         // TypeTag, rarity.
+                0,                                      // Int: effectType (graphics)
+                0.75F,                                  // Float: Accuracy as a percentage
+                3.5F,                                   // Float: Reload time, don't know math behind this yet.
+                -1.0F                                   // Float: Bonus Coef, unknown usage all weapons seem to be set to -1.0F(?)
         );
 
         // Plasma Cannons (copied from WeaponList)
