@@ -60,6 +60,7 @@ public final class WeaponRegistrar {
 
         // SetBaseAttributes should be before each group of weapons you want to be set to that attribute.
         // For this example weaponIDs are set a bit above whatever the highest ID was in WeaponList.
+        // All example weapons are copied from the T0/T1 entries
 
         // Railgun (copied from WeaponList)
         WeaponListAccessorMixin.invokeSetBaseAttributes(
